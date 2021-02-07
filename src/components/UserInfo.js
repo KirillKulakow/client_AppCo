@@ -34,7 +34,7 @@ const UserInfo = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    state.length > 0
+    state && state.length > 0
       ? setName(`${state[state.length - 2]} ${state[state.length - 1]}`)
       : setName("Unknown");
   }, [state]);

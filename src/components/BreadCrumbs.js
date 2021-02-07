@@ -4,6 +4,7 @@ import styles from "./BreadCrumbs.module.scss";
 
 const BreadCrumbs = memo(() => {
   const { pathname, state } = useLocation();
+  console.log(state);
   return (
     <div className={styles.container}>
       <Link className={styles.link} to='/'>
@@ -27,7 +28,7 @@ const BreadCrumbs = memo(() => {
             className={`${styles.link} ${styles.active}`}
             to='/user_stats/5'
           >
-            {state.length > 0 ? `${state[0]} ${state[1]}` : "Unknown"}
+            {state && state.length > 0 ? `${state[0]} ${state[1]}` : "Unknown"}
           </Link>
         </>
       )}

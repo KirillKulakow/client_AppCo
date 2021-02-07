@@ -1,7 +1,7 @@
 .container{
     max-width: 1180px;
     margin: 0 auto 24px;
-    min-width: 1180px;
+    width: 100%;
     select{
         height: 25px;
         color: #fff;
@@ -16,6 +16,10 @@
 .table{
     margin: 0 auto 24px;
     width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    overflow-x: auto;
     tbody{
         tr{
             cursor: pointer;

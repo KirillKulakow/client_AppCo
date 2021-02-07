@@ -1,5 +1,5 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://morning-spire-42291.herokuapp.com/api";
+axios.defaults.baseURL = "http://localhost:7200/api";
 
 export default axios;

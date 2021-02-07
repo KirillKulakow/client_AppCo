@@ -8,7 +8,7 @@ const UserInfoPage = () => {
   return (
     <>
       <Header />
-      <main style={{ minWidth: "1100px" }}>
+      <main>
         <BreadCrumbs />
         <UserInfo />
       </main>

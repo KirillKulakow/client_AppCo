@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useMemo } from "react";
 import ChartJS from "chart.js";
+import styles from "./LinearCharts.module.scss";
 
 const LinearCharts = ({ data }) => {
   const chartRef = useRef(null);
@@ -56,7 +57,7 @@ const LinearCharts = ({ data }) => {
   }, [options]);
 
   return (
-    <div style={{ width: "100%", height: "270px" }}>
+    <div className={styles.container}>
       <canvas ref={chartRef} />
     </div>
   );
